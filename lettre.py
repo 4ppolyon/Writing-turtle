@@ -1,16 +1,18 @@
 from turtle import *
 
+
 # Fonction qui dessine un espace
 def dessine_():
     up()
     forward(50)
     down()
 
+
 # Fonction qui dessine la lettre A
 def dessine_a():
     left(70)
     forward(100)
-    right(180-40)
+    right(180 - 40)
     forward(100)
     left(180)
     forward(20)
@@ -21,6 +23,7 @@ def dessine_a():
     right(70)
     forward(20)
     left(70)
+
 
 # Fonction qui dessine la lettre B arrondie
 def dessine_b():
@@ -41,6 +44,7 @@ def dessine_b():
     forward(25)
     down()
 
+
 # Fonction qui dessine la lettre C
 def dessine_c():
     up()
@@ -53,15 +57,17 @@ def dessine_c():
     down()
     left(90)
 
+
 # Fonction qui dessine la lettre D
 def dessine_d():
     circle(50, 180)
     left(90)
     forward(100)
     left(90)
-    up() 
+    up()
     forward(50)
     down()
+
 
 # Fonction qui dessine la lettre E
 def dessine_e():
@@ -81,6 +87,7 @@ def dessine_e():
     forward(50)
     left(90)
     forward(50)
+
 
 # Fonction qui dessine la lettre F
 def dessine_f():
@@ -102,6 +109,7 @@ def dessine_f():
     up()
     forward(50)
     down()
+
 
 # Fonction qui dessine la lettre G
 def dessine_g():
@@ -125,6 +133,7 @@ def dessine_g():
     left(90)
     down()
 
+
 # Fonction qui dessine la lettre H
 def dessine_h():
     left(90)
@@ -139,6 +148,7 @@ def dessine_h():
     forward(100)
     left(90)
 
+
 # Fonction qui dessine la lettre I
 def dessine_i():
     left(90)
@@ -146,6 +156,7 @@ def dessine_i():
     left(180)
     forward(100)
     left(90)
+
 
 # Fonction qui dessine la lettre J
 def dessine_j():
@@ -161,6 +172,7 @@ def dessine_j():
     forward(100)
     down()
     left(90)
+
 
 # Fonction qui dessine la lettre K
 def dessine_k():
@@ -180,6 +192,7 @@ def dessine_k():
     down()
     left(90)
 
+
 # Fonction qui dessine la lettre L
 def dessine_l():
     left(90)
@@ -188,7 +201,7 @@ def dessine_l():
     forward(100)
     left(90)
     forward(50)
-    
+
 
 # Fonction qui dessine la lettre M
 def dessine_m():
@@ -202,6 +215,7 @@ def dessine_m():
     forward(100)
     left(90)
 
+
 # Fonction qui dessine la lettre N
 def dessine_n():
     left(90)
@@ -214,6 +228,7 @@ def dessine_n():
     forward(100)
     left(90)
 
+
 # Fonction qui dessine la lettre O
 def dessine_o():
     up()
@@ -223,6 +238,7 @@ def dessine_o():
     up()
     forward(50)
     down()
+
 
 # Fonction qui dessine la lettre P arrondie
 def dessine_p():
@@ -239,6 +255,7 @@ def dessine_p():
     forward(50)
     down()
 
+
 # Fonction qui dessine la lettre Q
 def dessine_q():
     up()
@@ -248,10 +265,11 @@ def dessine_q():
     up()
     left(90)
     forward(50)
-    right(90+45)
+    right(90 + 45)
     down()
     forward(70)
     left(45)
+
 
 # Fonction qui dessine la lettre R arrondie
 def dessine_r():
@@ -266,6 +284,7 @@ def dessine_r():
     left(45)
     forward(70)
     left(45)
+
 
 # Fonction qui dessine la lettre S arrondie
 def dessine_s():
@@ -287,6 +306,7 @@ def dessine_s():
     left(90)
     down()
 
+
 # Fonction qui dessine la lettre T
 def dessine_t():
     up()
@@ -304,6 +324,7 @@ def dessine_t():
     forward(25)
     down()
 
+
 # Fonction qui dessine la lettre U arrondie
 def dessine_u():
     left(90)
@@ -320,21 +341,23 @@ def dessine_u():
     down()
     left(90)
 
+
 # Fonction qui dessine la lettre V
 def dessine_v():
     left(90)
     up()
     forward(96.16)
     down()
-    right(90+70)
+    right(90 + 70)
     forward(102.33)
     left(140)
     forward(102.33)
-    right(70+90)
+    right(70 + 90)
     up()
     forward(96.16)
     down()
     left(90)
+
 
 # Fonction qui dessine la lettre W
 def dessine_w():
@@ -355,6 +378,7 @@ def dessine_w():
     forward(96.16)
     down()
     left(90)
+
 
 # Fonction qui dessine la lettre X
 def dessine_x():
@@ -383,6 +407,7 @@ def dessine_y():
     down()
     left(55)
 
+
 # Fonction qui dessine la lettre Z
 def dessine_z():
     left(55)
@@ -393,8 +418,9 @@ def dessine_z():
     forward(70)
     right(125)
     forward(122.07)
-    right(55+180)
+    right(55 + 180)
     forward(70)
+
 
 # Fonction qui dessine la lettre 0
 def dessine_0():
@@ -414,6 +440,7 @@ def dessine_0():
     down()
     left(90)
 
+
 # Fonction qui dessine la lettre 1
 def dessine_1():
     up()
@@ -429,6 +456,7 @@ def dessine_1():
     forward(100)
     left(90)
 
+
 # Fonction qui dessine la lettre 2
 def dessine_2():
     left(45)
@@ -442,6 +470,7 @@ def dessine_2():
     left(135)
     down()
     forward(66.26)
+
 
 # Fonction qui dessine la lettre 3
 def dessine_3():
@@ -460,6 +489,7 @@ def dessine_3():
     left(90)
     forward(25)
     down()
+
 
 # Fonction qui dessine la lettre 4
 def dessine_4():
@@ -482,6 +512,7 @@ def dessine_4():
     forward(20)
     down()
 
+
 # Fonction qui dessine la lettre 5
 def dessine_5():
     forward(25)
@@ -496,6 +527,7 @@ def dessine_5():
     forward(100)
     down()
     left(90)
+
 
 # Fonction qui dessine la lettre 6
 def dessine_6():
@@ -516,6 +548,7 @@ def dessine_6():
     forward(25)
     down()
 
+
 # Fonction qui dessine la lettre 7
 def dessine_7():
     left(55)
@@ -531,6 +564,7 @@ def dessine_7():
     forward(70)
     down()
 
+
 # Fonction qui dessine la lettre 8
 def dessine_8():
     up()
@@ -542,6 +576,7 @@ def dessine_8():
     up()
     forward(25)
     down()
+
 
 # Fonction qui dessine la lettre 9
 def dessine_9():
@@ -555,6 +590,7 @@ def dessine_9():
     left(90)
     down()
 
+
 # Fonction qui dessine la lettre .
 def dessine_point():
     pensize(10)
@@ -564,12 +600,13 @@ def dessine_point():
     forward(10)
     down()
 
+
 # Fonction qui dessine la lettre ,
 def dessine_comma():
     pensize(10)
     forward(1)
     pensize(8)
-    right(90+45)
+    right(90 + 45)
     forward(10)
     left(180)
     forward(10)
@@ -578,6 +615,7 @@ def dessine_comma():
     forward(10)
     down()
     pensize(5)
+
 
 # Fonction qui dessine la lettre !
 def dessine_exclamation():
@@ -616,6 +654,7 @@ def dessine_interrogation():
     left(90)
     down()
 
+
 # Fonction qui dessine la lettre :
 def dessine_deux_points():
     dessine_()
@@ -642,7 +681,7 @@ def dessine_deux_points():
     forward(70)
     down()
     left(90)
-    
+
 
 # Fonction qui dessine la lettre '
 def dessine_apostrophe():
@@ -660,6 +699,7 @@ def dessine_apostrophe():
     left(90)
     down()
 
+
 # Fonction qui dessine la lettre )
 def dessine_parenthese_fermante():
     circle(20, 90)
@@ -671,6 +711,7 @@ def dessine_parenthese_fermante():
     circle(20, 90)
     forward(20)
     down()
+
 
 # Fonction qui dessine la lettre (
 def dessine_parenthese_ouvrante():
@@ -687,6 +728,7 @@ def dessine_parenthese_ouvrante():
     circle(-20, 90)
     left(180)
     down()
+
 
 def draw_inputed_char():
     chaine = "Entrez une lettre de l'alphabet (Ecrivez \"quit\" pour quitter) : "
