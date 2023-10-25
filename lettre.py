@@ -637,6 +637,9 @@ def dessine_exclamation():
 
 # Fonction qui dessine la lettre ?
 def dessine_interrogation():
+    up()
+    forward(10)
+    down()
     pensize(10)
     forward(1)
     pensize(5)
@@ -652,6 +655,7 @@ def dessine_interrogation():
     left(180)
     forward(75)
     left(90)
+    forward(10)
     down()
 
 

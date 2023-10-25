@@ -49,7 +49,7 @@ def main():
     pencolor("white")
     # épaisseur du trait
     pensize(5)
-    speed(10)
+    speed(35)
     # se placer à gauche
     up()
     goto(-900, 100)
