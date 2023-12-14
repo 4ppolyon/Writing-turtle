@@ -1,4 +1,6 @@
 # acces au fonctions du fichier lettre.py
+import sys
+
 from lettre import *
 
 # cree un dictionnaire qui associe chaque lettre a une fonction
@@ -14,13 +16,15 @@ fonctions = {' ': dessine_, 'a': dessine_a, 'b': dessine_b, 'c': dessine_c, 'd':
              '1': dessine_1, '2': dessine_2, '3': dessine_3, '4': dessine_4, '5': dessine_5, '6': dessine_6,
              '7': dessine_7, '8': dessine_8, '9': dessine_9, '.': dessine_point, "'": dessine_apostrophe,
              ',': dessine_comma, ':': dessine_deux_points, '!': dessine_exclamation, '?': dessine_interrogation,
-             '(': dessine_parenthese_ouvrante, ')': dessine_parenthese_fermante}
+             '(': dessine_parenthese_ouvrante, ')': dessine_parenthese_fermante, 'É': dessine_e_aigue,
+             'È': dessine_e_grave, 'é': dessine_e_aigue, 'è': dessine_e_grave, 'À': dessine_a_grave,
+             'à': dessine_a_grave}
 
 
 def ecrit(line, lettre):
-    if xcor() >= 47 * 19:
+    if xcor() >= 45 * 19:
         up()
-        goto(-900, 100 - 110 * line)
+        goto(-900, 100 - 140 * line)
         down()
         line += 1
     if line >= 4:
@@ -29,18 +33,15 @@ def ecrit(line, lettre):
         up()
         goto(-880, 100)
         down()
-        line = 0
+        line = 1
     fonctions[lettre]()
     up()
     forward(15)
     down()
     return line
 
-
-def main():
-    blabla = "Choisissez ce que vous voulez faire :\n1 : pour taper une ligne\n2 : pour que le programme affiche les " \
-             "lettres toutes d'un coup\n"
-    reponse = input(blabla)
+# check si le fichier a un argument
+def main(argc=len(sys.argv)):
     setup(1900, 500, -100, -50)  # titre de la fenêtre graphique
     title("OSEF")
     # couleur de fond de la fenêtre graphique
@@ -55,18 +56,17 @@ def main():
     goto(-900, 100)
     down()
     line = 1
-    nb_char = 0
-    if reponse == "1":
+    if argc == 1:
         ligne = input("Tapez \"stop\" pour arretez\n")
         while ligne != "stop":
             for lettre in list(ligne):
                 line = ecrit(line, lettre)
             up()
-            goto(-900, 100 - 110 * line)
+            goto(-900, 100 - 140 * line)
             down()
             line += 1
             ligne = input()
-    elif reponse == "2":
+    elif argc == 2:
         for lettre in fonctions.keys():
             line = ecrit(line, lettre)
     print("Merci d'avoir utilisé ce programme !")

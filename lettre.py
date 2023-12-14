@@ -1,3 +1,4 @@
+from time import sleep
 from turtle import *
 
 
@@ -23,6 +24,30 @@ def dessine_a():
     right(70)
     forward(20)
     left(70)
+
+def dessine_a_grave():
+#     first draw the accent
+    left(90)
+    up()
+    forward(100)
+    right(90)
+    forward(50)
+    right(180)
+    down()
+    right(10)
+    forward(30)
+    left(180)
+    forward(30)
+    left(190)
+    up()
+    forward(50)
+    left(90)
+    forward(100)
+    left(90)
+    down()
+#     then draw the letter
+    dessine_a()
+
 
 
 # Fonction qui dessine la lettre B arrondie
@@ -88,6 +113,69 @@ def dessine_e():
     left(90)
     forward(50)
 
+def dessine_e_grave():
+    left(90)
+    forward(100)
+    right(90)
+    forward(50)
+    right(180)
+    forward(10)
+    right(90)
+    up()
+    forward(10)
+    down()
+    left(80)
+    forward(30)
+    left(180)
+    forward(30)
+    right(80)
+    up()
+    forward(10)
+    down()
+    right(90)
+    forward(40)
+    left(90)
+    forward(50)
+    left(90)
+    forward(50)
+    left(180)
+    forward(50)
+    left(90)
+    forward(50)
+    left(90)
+    forward(50)
+
+def dessine_e_aigue():
+    left(90)
+    forward(100)
+    right(90)
+    forward(10)
+    left(90)
+    up()
+    forward(10)
+    down()
+    right(80)
+    forward(30)
+    left(180)
+    forward(30)
+    left(80)
+    up()
+    forward(10)
+    down()
+    left(90)
+    forward(40)
+    right(180)
+    forward(50)
+    left(90)
+    forward(50)
+    left(90)
+    forward(50)
+    left(180)
+    forward(50)
+    left(90)
+    forward(50)
+    left(90)
+    forward(50)
 
 # Fonction qui dessine la lettre F
 def dessine_f():
