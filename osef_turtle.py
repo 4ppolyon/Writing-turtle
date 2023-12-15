@@ -22,22 +22,30 @@ fonctions = {' ': dessine_, 'a': dessine_a, 'b': dessine_b, 'c': dessine_c, 'd':
 
 
 def ecrit(line, lettre):
-    if xcor() >= 45 * 19:
+    check = False
+    if xcor() >= 855:
         up()
         goto(-900, 100 - 140 * line)
         down()
         line += 1
+        check = True
     if line >= 4:
-        #     on efface la fenetre et on recommence
+        # on efface la fenetre et on recommence
         clear()
         up()
-        goto(-880, 100)
+        goto(-900, 100)
         down()
         line = 1
-    fonctions[lettre]()
-    up()
-    forward(15)
-    down()
+    if lettre in fonctions.keys():
+        if check and (lettre == ' ' or lettre == '\n'):
+            return line
+        fonctions[lettre]()
+        up()
+        forward(15)
+        down()
+    else:
+        print("La lettre " + lettre + " n'est pas dans le dictionnaire")
+        fonctions[' ']()
     return line
 
 # check si le fichier a un argument
