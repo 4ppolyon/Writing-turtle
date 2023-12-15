@@ -18,7 +18,7 @@ fonctions = {' ': dessine_, 'a': dessine_a, 'b': dessine_b, 'c': dessine_c, 'd':
              ',': dessine_comma, ':': dessine_deux_points, '!': dessine_exclamation, '?': dessine_interrogation,
              '(': dessine_parenthese_ouvrante, ')': dessine_parenthese_fermante, 'É': dessine_e_aigue,
              'È': dessine_e_grave, 'é': dessine_e_aigue, 'è': dessine_e_grave, 'À': dessine_a_grave,
-             'à': dessine_a_grave}
+             'à': dessine_a_grave, 'ë': dessine_e_trema, 'Ë': dessine_e_trema}
 
 
 def ecrit(line, lettre):
