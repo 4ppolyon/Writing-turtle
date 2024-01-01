@@ -24,8 +24,9 @@ def dessine_a():
     forward(20)
     left(70)
 
+
 def dessine_a_grave():
-#     first draw the accent
+    #     first draw the accent
     left(90)
     up()
     forward(100)
@@ -44,9 +45,8 @@ def dessine_a_grave():
     forward(100)
     left(90)
     down()
-#     then draw the letter
+    #     then draw the letter
     dessine_a()
-
 
 
 # Fonction qui dessine la lettre B arrondie
@@ -112,6 +112,7 @@ def dessine_e():
     left(90)
     forward(50)
 
+
 def dessine_e_grave():
     left(90)
     forward(100)
@@ -144,6 +145,7 @@ def dessine_e_grave():
     left(90)
     forward(50)
 
+
 def dessine_e_aigue():
     left(90)
     forward(100)
@@ -175,6 +177,7 @@ def dessine_e_aigue():
     forward(50)
     left(90)
     forward(50)
+
 
 def dessine_e_trema():
     left(90)
@@ -211,6 +214,7 @@ def dessine_e_trema():
     forward(50)
     left(90)
     forward(50)
+
 
 # Fonction qui dessine la lettre F
 def dessine_f():
@@ -855,4 +859,3 @@ def dessine_parenthese_ouvrante():
     circle(-20, 90)
     left(180)
     down()
-
